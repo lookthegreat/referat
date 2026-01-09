@@ -112,6 +112,7 @@ print(type(MyClass))    # <class 'type'> - клас теж об'єкт
 2.1 Динамичний характер класів
 Класи в Python — це об'єкти першого класу, які створюються під час виконання програми. Ключове слово class не є декларацією на рівні компіляції, а виконуваною інструкцією.
 
+```mermaid
 sequenceDiagram
     participant ThreadA as Потік A (Активний)
     participant GIL as GIL Mechanism
@@ -134,6 +135,7 @@ sequenceDiagram
     Note over ThreadB, GIL: Потік B володіє GIL
     
     ThreadB->>ThreadB: Виконує байт-код
+```
 
 
 python
